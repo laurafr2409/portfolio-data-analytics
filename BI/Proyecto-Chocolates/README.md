@@ -17,7 +17,7 @@ El valor técnico de este proyecto reside en la normalización de datos contable
 * **Limpieza de Tipos de Datos**: Transformación de la columna `Amount` (cargada originalmente como texto con símbolos de `$` y comas) a tipo `DECIMAL` mediante el uso de anidación de funciones `REPLACE` y `CAST`.
 * **Cálculos de Negocio Dinámicos**: Creación de una vista (`Clean_Chocolate_Sales`) que automatiza el cálculo del precio por unidad, incorporando la función `NULLIF` para prevenir errores de división por cero en registros con envíos nulos.
 * **Modelado Multidimensional**: 
-    * Creación de tablas de dimensión** (`Dim_SalesPersons`, `Dim_Products`) mediante selecciones únicas para estandarizar los catálogos de maestros.
+    * Creación de tablas de dimensión (`Dim_SalesPersons`, `Dim_Products`) mediante selecciones únicas para estandarizar los catálogos de maestros.
     * Estructuración de la tabla de hechos (`Fact_Sales`) para facilitar el análisis temporal y geográfico.
 
 ### 2. Power BI (Business Intelligence)
@@ -25,7 +25,7 @@ El valor técnico de este proyecto reside en la normalización de datos contable
 * **Análisis Geográfico**: Visualización de la distribución de ingresos por país.
 * **Control de Ventas**: Dashboard interactivo con segmentación por producto y periodos de tiempo.
 
-## 📂 Estructura de Archivos
+## Estructura de Archivos
 - `Análisis de Desempeño Comercial Glo.txt`: Código completo de limpieza contable, creación de vistas y modelado estrella.
 - `Análisis de Desempeño Comercial Global Chocolate Corp.pbix`: Archivo de Power BI con el informe comercial.
 - `image.png`: Captura del informe final.
