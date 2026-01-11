@@ -1,0 +1,38 @@
+Análisis de Desempeño Comercial Global: Chocolate Corp (SQL & Power BI)
+
+
+
+CREATE TABLE Raw_Chocolate_Sales (
+    Sales_Person VARCHAR(100),
+    Country VARCHAR(100),
+    Product VARCHAR(100),
+    Sale_Date DATE,
+    Amount VARCHAR(50), -- Se carga como texto por el símbolo $ y comas
+    Boxes_Shipped INT
+);
+
+CREATE VIEW Clean_Chocolate_Sales AS
+SELECT 
+    Sales_Person,
+    Country,
+    Product,
+    Sale_Date,
+    -- Quitamos el '$' y las comas, luego convertimos a decimal
+    CAST(REPLACE(REPLACE(Amount, '$', ''), ',', '') AS DECIMAL(10,2)) AS Sale_Amount,
+    Boxes_Shipped,
+    -- Calculamos el precio por caja (métrica de negocio)
+    ROUND(CAST(REPLACE(REPLACE(Amount, '$', ''), ',', '') AS DECIMAL(10,2)) / NULLIF(Boxes_Shipped, 0), 2) AS Price_Per_Box
+FROM Raw_Chocolate_Sales;
+
+-- Tabla de Dimensión: Vendedores
+CREATE TABLE Dim_SalesPersons AS
+SELECT DISTINCT Sales_Person, Country FROM Clean_Chocolate_Sales;
+
+-- Tabla de Dimensión: Productos
+CREATE TABLE Dim_Products AS
+SELECT DISTINCT Product FROM Clean_Chocolate_Sales;
+
+-- Tabla de Hechos: Ventas (con IDs simplificados o nombres)
+CREATE TABLE Fact_Sales AS
+SELECT Sale_Date, Sales_Person, Product, Sale_Amount, Boxes_Shipped
+FROM Clean_Chocolate_Sales;
