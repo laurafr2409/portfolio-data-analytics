@@ -15,17 +15,17 @@ Este proyecto evalúa la viabilidad financiera y el perfil de riesgo de un porta
 ## Stack Técnico e Ingeniería de Datos
 ### 1. SQL 
 El script SQL demuestra un dominio de transformación de datos complejos:
-**Limpieza de Fechas Críticas**: Uso de expresiones regulares (`REGEXP_LIKE`) para normalizar múltiples formatos de fecha (YYYY-MM-DD y MM/DD/YYYY) en una sola columna estándar de tipo DATE.
-**Lógica de Negocio y Flags**: Implementación de sentencias `CASE` para transformar valores booleanos de texto en flags numéricos (`IS_EXPLICIT_FLAG`) y definir etiquetas de riesgo dinámicas.
-**Esquema Estrella con Control de Fan-out**:
+* **Limpieza de Fechas Críticas**: Uso de expresiones regulares (`REGEXP_LIKE`) para normalizar múltiples formatos de fecha (YYYY-MM-DD y MM/DD/YYYY) en una sola columna estándar de tipo DATE.
+* **Lógica de Negocio y Flags**: Implementación de sentencias `CASE` para transformar valores booleanos de texto en flags numéricos (`IS_EXPLICIT_FLAG`) y definir etiquetas de riesgo dinámicas.
+* **Esquema Estrella con Control de Fan-out**:
     * **Dimensiones**: Separación lógica de Artistas (`DIM_ARTISTA_GENERO`), Tiempo (`DIM_TIEMPO`) y Clasificación de Riesgo (`DIM_CONTENIDO_RIESGO`)].
     * **Optimización**: Uso de `GROUP BY` y agregaciones (`MAX`) para consolidar datos de artistas únicos y evitar la duplicidad (fan-out) en la tabla de hechos.
-**Integridad Referencial**: Uso de Claves Sustitutas (`SK`) y restricciones de integridad para asegurar un modelo de datos robusto y escalable.
+* **Integridad Referencial**: Uso de Claves Sustitutas (`SK`) y restricciones de integridad para asegurar un modelo de datos robusto y escalable.
 
 ### 2. Power BI (Business Intelligence)
-**Análisis de Dispersión**: Visualización de "Popularidad" vs. "Tiempo" para detectar éxitos virales y activos subvalorados.
-**Filtros Temporales**: Capacidad de desglose histórico desde 1960 hasta 2025.
-**Storytelling**: Dashboard diseñado para la toma de decisiones financieras, destacando el volumen de activos y la concentración por género (Soundtrack, Pop, Rap).
+* **Análisis de Dispersión**: Visualización de "Popularidad" vs. "Tiempo" para detectar éxitos virales y activos subvalorados.
+* **Filtros Temporales**: Capacidad de desglose histórico desde 1960 hasta 2025.
+* **Storytelling**: Dashboard diseñado para la toma de decisiones financieras, destacando el volumen de activos y la concentración por género (Soundtrack, Pop, Rap).
 
 ##  Estructura de Archivos
 - `Análisis de Inversión en Activos Mu.txt`: Código completo de ETL, limpieza de fechas y modelado estrella.
