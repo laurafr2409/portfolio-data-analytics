@@ -9,7 +9,7 @@ Este proyecto analiza el ecosistema global de vehículos eléctricos para 2025, 
 ##  Key Insights (Extraídos del Análisis)
 1. **Liderazgo en Performance:** Maserati lidera el ranking de aceleración media con una respuesta inferior a los 4 segundos, seguido de cerca por Lucid y Porsche, consolidando el dominio del segmento de alto rendimiento.
 2. **Relación Rango/Segmento:** Existe una correlación directa entre el tamaño del vehículo y su autonomía. El segmento F-Luxury presenta el rango promedio más alto (superando los 500 km), mientras que los segmentos A-Mini y B-Compact priorizan la eficiencia urbana con rangos menores.
-3. **Eficiencia Tecnológica:** El rango promedio global se sitúa en 393 km, con una capacidad de carga rápida media de 125.1 kW**, marcando el estándar mínimo competitivo para fabricantes en 2025.
+3. **Eficiencia Tecnológica:** El rango promedio global se sitúa en 393 km, con una capacidad de carga rápida media de 125.1 kW, marcando el estándar mínimo competitivo para fabricantes en 2025.
 
 ## Stack Técnico y Metodología
 ### 1. SQL (Data Engineering)
