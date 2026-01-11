@@ -24,6 +24,6 @@ Se implementó un flujo de trabajo profesional desde la ingesta hasta el modelad
 - **Interactividad:** Implementación de segmentadores por *Segmento* y *Carrocería* para un análisis granular.
 
 ## Estructura de Archivos
-- `Análisis de Liderazgo Tecnológico y Posicionamiento de Marca SCRIPTS.sql`: Código completo de creación de base de datos, limpieza y carga.
+- `Análisis de Liderazgo Tecnológico y Posicionamiento de Marca SCRIPTS.txt`: Código completo de creación de base de datos, limpieza y carga.
 - `Análisis de Liderazgo Tecnológico y Posicionamiento de Marca.pbix`: Reporte interactivo de Power BI.
 - `image.png`: Captura de pantalla del informe final.
