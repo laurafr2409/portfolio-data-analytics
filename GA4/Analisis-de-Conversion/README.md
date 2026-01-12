@@ -21,7 +21,7 @@ Para este análisis se utilizó la cuenta demo de Google Analytics 4. Debido a q
 * **Utilidad:** Esta vista es fundamental para entender la calidad del tráfico que llega desde cada fuente.
 
 ### 2. Ingresos Totales por Canal (Gráfico de Barras)
-![Gráfico de Barras](../img/grafico_barras_compacto.png)
+![Gráfico de Barras](../img/grafico_barras.png)
 * **Observación:** El canal **Direct** lidera ampliamente la generación de ingresos, alcanzando casi los $60,000. 
 * **Comparativa:** Canales como **Organic Search** y **Paid Search** ocupan el segundo y tercer lugar, aunque con una diferencia notable respecto al tráfico directo.
 
