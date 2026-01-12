@@ -30,5 +30,4 @@ En este gráfico de dispersión, comparamos la cantidad de sesiones frente a la 
 
 1.  **Optimizar Cross-network:** Presenta la tasa de conversión más alta (0.55%). Es un canal ideal para escalar inversión.
 2.  **Mejorar el CRO en Organic Search:** Es el canal que más gente trae, pero su tasa de conversión es baja (0.31%). Hay una oportunidad de mejora en las landing pages.
-3.  **Revisar Tráfico 'Unassigned':** Se detectaron más de $3,800 USD en ingresos sin una fuente clara. Es necesario corregir el etiquetado de campañas.
-4.  **Fidelización:** El éxito de 'Direct' indica que la marca es fuerte; se sugiere reforzar con estrategias de retención.
+3.  **Fidelización:** El éxito de 'Direct' indica que la marca es fuerte; se sugiere reforzar con estrategias de retención.
