@@ -1,56 +1,48 @@
-# Análisis Avanzado del Comportamiento del Usuario (GA4)
+#  Análisis Estratégico de Adquisición y Embudo de Conversión (GA4)
 
-## Objetivo
-Analizar el comportamiento de compra y la retención de usuarios mediante **GA4 Explorations**, identificando fricciones en la conversión y oportunidades de optimización para marketing y producto.
-
----
-
-## Metodología
-- Fuente de datos: **GA4 Demo Account – Google Merchandise Store**
-- Herramienta: **GA4 Explorations**
-- Técnicas: embudos, rutas, cohortes y tablas de forma libre
+##  Objetivo del Proyecto
+El propósito de este análisis es evaluar el rendimiento de los canales de adquisición de la **Google Merchandise Store** y diagnosticar la eficiencia del embudo de ventas. La investigación se centra en identificar qué fuentes de tráfico generan ingresos reales y en qué etapas del proceso de compra se producen los mayores abandonos de usuarios.
 
 ---
 
-## Análisis
+##  Metodología Técnica
+Para garantizar la precisión de los hallazgos en la propiedad demo de GA4, se aplicaron las siguientes técnicas de análisis avanzado:
 
-### Embudo de Conversión
-![Embudo de Conversión](../img/funnel_exploration.png)
-
-**Observación:** La mayor pérdida de usuarios ocurre al iniciar el proceso de pago.  
-**Utilidad:** Permite identificar el principal punto de fricción del checkout y priorizar acciones de optimización.
-
----
-
-### Ruta del Usuario
-![Ruta del Usuario](../img/path_exploration.png)
-
-**Observación:** La conversión suele estar precedida por múltiples interacciones con productos.  
-**Utilidad:** Ayuda a comprender el proceso de decisión y a optimizar la experiencia previa a la compra.
+* **Segmentación de Audiencias:** División de la data entre **"Usuarios con compra"** y **"Usuarios sin compra"** para normalizar las métricas de comportamiento.
+* **Análisis de Cohortes:** Evaluación de la retención de usuarios activos por semana para medir la recurrencia.
+* **Visualización de Embudos (Funnel Exploration):** Mapeo del recorrido desde la visualización del producto hasta la transacción final.
 
 ---
 
-### Análisis de Cohortes
-![Análisis de Cohortes](../img/cohort_exploration.png)
+##  Exploraciones y Hallazgos Clave
 
-**Observación:** El retorno de usuarios disminuye significativamente después de la primera semana.  
-**Utilidad:** Señala oportunidades para implementar estrategias de retención temprana.
+### 1. Rendimiento por Canal de Adquisición (Tabla Segmentada)
+![Tabla de Segmentos](../img/tabla_segmentada.png)
+* **Análisis:** Al desglosar los grupos de canales, se observa que el canal **Direct** es el motor principal de ingresos, generando **$58,024.28** mediante 1,146 sesiones con compra.
+* **Eficiencia:** El canal **Cross-network** presenta el *Purchase Conversion Rate* más alto del desglose con un **0.55%**.
+
+### 2. Visión Ejecutiva de Ingresos
+![Gráfico de Barras](../img/grafico_barras_compacto.png)
+* **Hallazgo:** Existe una dominancia clara de los ingresos provenientes de **Direct** y **Organic Search**.
+* **Contexto:** Los canales de pago (**Paid Search**) ocupan el tercer lugar en volumen de facturación, seguidos por Cross-network y Referral.
+
+### 3. Matriz de Eficiencia (Scatter Plot)
+![Scatter Plot](../img/scatter_plot.png)
+* **Interpretación:** El gráfico permite identificar que **Organic Search** y **Direct** concentran el mayor volumen de sesiones, pero su tasa de conversión es moderada en comparación con canales de menor volumen pero alta eficiencia.
+
+### 4. Diagnóstico del Embudo de Compra
+![Embudo de Conversión](../img/embudo_pasos.png)
+* **Punto de Abandono Crítico:** El mayor porcentaje de abandono ocurre inmediatamente después del primer paso (**Ver artículo**), donde el **73.5%** de los usuarios no avanza hacia el carrito.
+* **Tasa de Cierre:** Una vez que el usuario llega a la etapa de **Checkout**, la tasa de finalización hacia la **Compra** es saludable, alcanzando un **54.1%**.
 
 ---
 
-### Rendimiento por Fuente / Medio
-![Tabla Fuente / Medio](../img/free_form_table.png)
+##  Conclusiones y Recomendaciones Estratégicas
 
-**Observación:** El tráfico pagado genera mayor volumen de ingresos, mientras que el tráfico orgánico muestra mayor eficiencia en conversión.  
-**Utilidad:** Facilita decisiones de inversión basadas en volumen versus calidad del tráfico.
-
----
-
-## Conclusiones
-1. El inicio del checkout representa el principal punto de fricción.
-2. El proceso previo a la compra sigue un patrón consistente.
-3. La retención disminuye rápidamente en semanas posteriores.
-4. Existen diferencias claras entre volumen y eficiencia por canal.
+1.  **Optimización de la Intención en el Sitio:** Dado que el abandono inicial es del 73.5%, se recomienda revisar la relevancia de las páginas de producto y la experiencia de usuario (UX) para incentivar la acción de "Añadir al carrito".
+2.  **Escalabilidad de Cross-network:** Este canal demuestra ser el más eficiente en conversión (0.55%). Se sugiere evaluar un incremento en la inversión controlada para este segmento.
+3.  **Fidelización del Tráfico Direct:** Al ser la mayor fuente de ingresos ($58k), es crítico mantener estrategias de retención para usuarios recurrentes, ya que son la base de la estabilidad financiera de la tienda.
+4.  **Refuerzo de SEO (Organic Search):** Con un ingreso de **$28,736.88**, el tráfico orgánico es un pilar fundamental, pero requiere optimización en el flujo de navegación para mejorar su tasa de conversión actual.
 
 ---
-**Herramientas:** Google Analytics 4 (Explorations).
+**Tecnologías utilizadas:** Google Analytics 4 (Exploraciones de formato libre, Análisis de cohortes, Embudos de conversión y Segmentación personalizada).
