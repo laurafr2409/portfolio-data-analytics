@@ -22,14 +22,14 @@ Este desglose detalla qué combinaciones de origen y medio atraen tráfico de ma
 ## 3. Distribución Geográfica de Ingresos
 El análisis por país revela una concentración masiva de la facturación. Estados Unidos representa el motor principal de la tienda, seguido por Canadá y México con una diferencia de volumen significativa.
 
-![Tabla de ingresos por país](../img/Screenshot%202026-01-12%20021852.png)
+![Tabla de ingresos por país](../img/facturacion-geografica..png)
 
 ---
 
 ## 4. Flujo de Navegación del Usuario
 A través de la exploración de rutas, observamos el recorrido secuencial. La mayoría de los usuarios inician en la página principal y avanzan hacia vistas de productos y promociones internas, demostrando la relevancia de los banners promocionales.
 
-![Exploración de rutas de usuario](../img/facturacion-geografica.png)
+![Exploración de rutas de usuario](../img/nav-rendimiento.png)
 
 ---
 
