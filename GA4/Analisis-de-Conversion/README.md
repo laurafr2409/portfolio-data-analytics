@@ -8,17 +8,17 @@ Identificar qué canales de adquisición en la Google Merchandise Store generan 
 ## Exploraciones Realizadas
 
 ### 1. Desglose de Calidad de Usuarios (Tabla Segmentada)
-![Tabla de Segmentos](GA4/img/tabla_segmentada.png)
+![Tabla de Segmentos](../img/tabla_segmentada.png)
 * **Técnica:** Segmentación de Usuarios con Compra vs. Usuarios sin Compra.
 * **Propósito:** Al segmentar, se pudo calcular el Purchase Conversion Rate (PCR) real por canal, eliminando el ruido de las sesiones no transaccionales y validando la calidad del tráfico de fuentes como Paid Search.
 
 ### 2. Visión Ejecutiva de Ingresos (Gráfico de Barras)
-![Gráfico de Barras](./img/grafico_barras.png)
+![Gráfico de Barras](../img/grafico_barras.png)
 * **Técnica:** Análisis de Total Revenue por Canal.
 * **Propósito:** Identificar visualmente los pilares financieros del negocio. Este gráfico permite priorizar canales basándose puramente en el retorno económico inmediato.
 
 ### 3. Matriz de Eficiencia (Gráfico de Dispersión)
-![Scatter Plot](./img/scatter_plot.png)
+![Scatter Plot](../img/scatter_plot.png)
 * **Técnica:** Relación entre Sesiones (X) y PCR (Y).
 * **Propósito:** Identificar canales de alto rendimiento. Los canales en el cuadrante superior (alta conversión) son candidatos para aumentar la inversión, mientras que los de alta sesión pero baja conversión requieren optimización de landing page.
 
