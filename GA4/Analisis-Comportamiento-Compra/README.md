@@ -5,7 +5,7 @@ Evaluar la eficacia del embudo de ventas, la fidelidad de los usuarios a través
 
 ---
 
-## 1. Análisis del Embudo de Conversión (Purchase Journey)
+## 1. Análisis del Embudo de Conversión 
 Se analiza el recorrido del usuario desde el interés inicial hasta la transacción final. Se detecta una pérdida crítica de usuarios potenciales en la primera etapa de interacción con el producto.
 
 ![Embudo de pasos de compra con tasas de abandono](../img/embudo_conversion.png)
