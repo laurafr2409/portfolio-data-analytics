@@ -8,7 +8,7 @@ Identificar qué canales de adquisición en la Google Merchandise Store generan 
 ## Exploraciones Realizadas
 
 ### 1. Desglose de Calidad de Usuarios (Tabla Segmentada)
-![Tabla de Segmentos](./img/tabla_segmentada.png)
+![Tabla de Segmentos](GA4/img/tabla_segmentada.png)
 * **Técnica:** Segmentación de Usuarios con Compra vs. Usuarios sin Compra.
 * **Propósito:** Al segmentar, se pudo calcular el Purchase Conversion Rate (PCR) real por canal, eliminando el ruido de las sesiones no transaccionales y validando la calidad del tráfico de fuentes como Paid Search.
 
