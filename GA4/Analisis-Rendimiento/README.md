@@ -22,7 +22,7 @@ Este desglose detalla qué combinaciones de origen y medio atraen tráfico de ma
 ## 3. Distribución Geográfica de Ingresos
 El análisis por país revela una concentración masiva de la facturación. Estados Unidos representa el motor principal de la tienda, seguido por Canadá y México con una diferencia de volumen significativa.
 
-![Tabla de ingresos por país](../img/facturacion-geografica..png)
+![Tabla de ingresos por país](../img/facturacion-geografica.png)
 
 ---
 
